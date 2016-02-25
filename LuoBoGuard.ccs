@@ -1,0 +1,107 @@
+<Solution>
+  <PropertyGroup Name="LuoBoGuard" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="Resource">
+          <PlistImageFolder Image="mainscene1.png" PListFile="mainscene1.plist" Name=".mainscene1_PList.Dir">
+            <PlistImageFile Name="18183_normal.png" Key="18183_normal.png" />
+            <PlistImageFile Name="18183_press.png" Key="18183_press.png" />
+            <PlistImageFile Name="bird.png" Key="bird.png" />
+            <PlistImageFile Name="btn_adventure_normal_CN.png" Key="btn_adventure_normal_CN.png" />
+            <PlistImageFile Name="btn_adventure_pressed_CN.png" Key="btn_adventure_pressed_CN.png" />
+            <PlistImageFile Name="btn_bg.png" Key="btn_bg.png" />
+            <PlistImageFile Name="btn_boss_normal_CN.png" Key="btn_boss_normal_CN.png" />
+            <PlistImageFile Name="btn_boss_pressed_CN.png" Key="btn_boss_pressed_CN.png" />
+            <PlistImageFile Name="btn_help_normal.png" Key="btn_help_normal.png" />
+            <PlistImageFile Name="btn_help_pressed.png" Key="btn_help_pressed.png" />
+            <PlistImageFile Name="btn_nest_normal_CN.png" Key="btn_nest_normal_CN.png" />
+            <PlistImageFile Name="btn_nest_pressed_CN.png" Key="btn_nest_pressed_CN.png" />
+            <PlistImageFile Name="btn_setting_normal.png" Key="btn_setting_normal.png" />
+            <PlistImageFile Name="btn_setting_pressed.png" Key="btn_setting_pressed.png" />
+            <PlistImageFile Name="carrot.png" Key="carrot.png" />
+            <PlistImageFile Name="close_normal.png" Key="close_normal.png" />
+            <PlistImageFile Name="close_pressed.png" Key="close_pressed.png" />
+            <PlistImageFile Name="cloud1.png" Key="cloud1.png" />
+            <PlistImageFile Name="cloud2.png" Key="cloud2.png" />
+            <PlistImageFile Name="leaf-1.png" Key="leaf-1.png" />
+            <PlistImageFile Name="leaf-2.png" Key="leaf-2.png" />
+            <PlistImageFile Name="leaf-3.png" Key="leaf-3.png" />
+            <PlistImageFile Name="locked.png" Key="locked.png" />
+            <PlistImageFile Name="mainbg.png" Key="mainbg.png" />
+            <PlistImageFile Name="mainbg_CN.png" Key="mainbg_CN.png" />
+            <PlistImageFile Name="news_normal.png" Key="news_normal.png" />
+            <PlistImageFile Name="news_pressed.png" Key="news_pressed.png" />
+            <PlistImageFile Name="weiboicon01_normal.png" Key="weiboicon01_normal.png" />
+            <PlistImageFile Name="weiboicon01_press.png" Key="weiboicon01_press.png" />
+            <PlistImageFile Name="weiboicon02_normal.png" Key="weiboicon02_normal.png" />
+            <PlistImageFile Name="weiboicon02_press.png" Key="weiboicon02_press.png" />
+            <PlistImageFile Name="weiboicon03_normal.png" Key="weiboicon03_normal.png" />
+            <PlistImageFile Name="weiboicon03_press.png" Key="weiboicon03_press.png" />
+            <PlistImageFile Name="weiboicon04_normal.png" Key="weiboicon04_normal.png" />
+            <PlistImageFile Name="weiboicon04_press.png" Key="weiboicon04_press.png" />
+            <PlistImageFile Name="weiboicon05_normal.png" Key="weiboicon05_normal.png" />
+            <PlistImageFile Name="weiboicon05_press.png" Key="weiboicon05_press.png" />
+            <PlistImageFile Name="weiboicon06_normal.png" Key="weiboicon06_normal.png" />
+            <PlistImageFile Name="weiboicon06_press.png" Key="weiboicon06_press.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="stages_bg.png" PListFile="stages_bg.plist" Name=".stages_bg_PList.Dir">
+            <PlistImageFile Name="gainhonor_1.png" Key="gainhonor_1.png" />
+            <PlistImageFile Name="gainhonor_2.png" Key="gainhonor_2.png" />
+            <PlistImageFile Name="gainhonor_3.png" Key="gainhonor_3.png" />
+            <PlistImageFile Name="gainhonor_4.png" Key="gainhonor_4.png" />
+            <PlistImageFile Name="map_covered.png" Key="map_covered.png" />
+            <PlistImageFile Name="map_covered_CN.png" Key="map_covered_CN.png" />
+            <PlistImageFile Name="ss_back_normal.png" Key="ss_back_normal.png" />
+            <PlistImageFile Name="ss_back_pressed.png" Key="ss_back_pressed.png" />
+            <PlistImageFile Name="ss_bg.png" Key="ss_bg.png" />
+            <PlistImageFile Name="ss_bg_CN.png" Key="ss_bg_CN.png" />
+            <PlistImageFile Name="ss_help_normal.png" Key="ss_help_normal.png" />
+            <PlistImageFile Name="ss_help_pressed.png" Key="ss_help_pressed.png" />
+            <PlistImageFile Name="ss_locked_CN.png" Key="ss_locked_CN.png" />
+            <PlistImageFile Name="ss_locked_icon.png" Key="ss_locked_icon.png" />
+            <PlistImageFile Name="ss_play_normal_CN.png" Key="ss_play_normal_CN.png" />
+            <PlistImageFile Name="ss_play_pressed_CN.png" Key="ss_play_pressed_CN.png" />
+            <PlistImageFile Name="ss_waves_1.png" Key="ss_waves_1.png" />
+            <PlistImageFile Name="ss_waves_10.png" Key="ss_waves_10.png" />
+            <PlistImageFile Name="ss_waves_15.png" Key="ss_waves_15.png" />
+            <PlistImageFile Name="ss_waves_20.png" Key="ss_waves_20.png" />
+            <PlistImageFile Name="ss_waves_25.png" Key="ss_waves_25.png" />
+            <PlistImageFile Name="ss_waves_30.png" Key="ss_waves_30.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="stages_theme1.png" PListFile="stages_theme1.plist" Name=".stages_theme1_PList.Dir">
+            <PlistImageFile Name="ss_cloud.png" Key="ss_cloud.png" />
+            <PlistImageFile Name="ss_map01.png" Key="ss_map01.png" />
+            <PlistImageFile Name="ss_map02.png" Key="ss_map02.png" />
+            <PlistImageFile Name="ss_map03.png" Key="ss_map03.png" />
+            <PlistImageFile Name="ss_map04.png" Key="ss_map04.png" />
+            <PlistImageFile Name="ss_map05.png" Key="ss_map05.png" />
+            <PlistImageFile Name="ss_map06.png" Key="ss_map06.png" />
+            <PlistImageFile Name="ss_map07.png" Key="ss_map07.png" />
+            <PlistImageFile Name="ss_map08.png" Key="ss_map08.png" />
+            <PlistImageFile Name="ss_map09.png" Key="ss_map09.png" />
+            <PlistImageFile Name="ss_map10.png" Key="ss_map10.png" />
+            <PlistImageFile Name="ss_map11.png" Key="ss_map11.png" />
+            <PlistImageFile Name="ss_map12.png" Key="ss_map12.png" />
+            <PlistImageFile Name="ss_towers_01.png" Key="ss_towers_01.png" />
+            <PlistImageFile Name="ss_towers_02.png" Key="ss_towers_02.png" />
+            <PlistImageFile Name="ss_towers_03.png" Key="ss_towers_03.png" />
+            <PlistImageFile Name="ss_towers_04.png" Key="ss_towers_04.png" />
+            <PlistImageFile Name="ss_towers_05.png" Key="ss_towers_05.png" />
+            <PlistImageFile Name="ss_towers_06.png" Key="ss_towers_06.png" />
+            <PlistImageFile Name="ss_towers_07.png" Key="ss_towers_07.png" />
+            <PlistImageFile Name="ss_towers_08.png" Key="ss_towers_08.png" />
+            <PlistImageFile Name="ss_towers_09.png" Key="ss_towers_09.png" />
+            <PlistImageFile Name="ss_towers_10.png" Key="ss_towers_10.png" />
+            <PlistImageFile Name="ss_towers_11.png" Key="ss_towers_11.png" />
+            <PlistImageFile Name="ss_towers_12.png" Key="ss_towers_12.png" />
+          </PlistImageFolder>
+          <Image Name="HelloWorld.png" />
+        </Folder>
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="MissonSelect.csd" Type="Scene" />
+        <Project Name="Scene.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
