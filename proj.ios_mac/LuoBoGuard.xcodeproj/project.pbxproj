@@ -63,6 +63,8 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		D05B59BA1C7FF78400F40604 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05B59B81C7FF78400F40604 /* GameScene.cpp */; };
+		D05B59BB1C7FF78400F40604 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D05B59B81C7FF78400F40604 /* GameScene.cpp */; };
 		D0C9A90F1C7EDBA0005E7A36 /* MissonScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0C9A90D1C7EDBA0005E7A36 /* MissonScene.cpp */; };
 		D0C9A9101C7EDBA0005E7A36 /* MissonScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0C9A90D1C7EDBA0005E7A36 /* MissonScene.cpp */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
@@ -159,6 +161,8 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D05B59B81C7FF78400F40604 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		D05B59B91C7FF78400F40604 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
 		D0C9A90D1C7EDBA0005E7A36 /* MissonScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissonScene.cpp; sourceTree = "<group>"; };
 		D0C9A90E1C7EDBA0005E7A36 /* MissonScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MissonScene.hpp; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -307,6 +311,8 @@
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				D0C9A90D1C7EDBA0005E7A36 /* MissonScene.cpp */,
 				D0C9A90E1C7EDBA0005E7A36 /* MissonScene.hpp */,
+				D05B59B81C7FF78400F40604 /* GameScene.cpp */,
+				D05B59B91C7FF78400F40604 /* GameScene.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -504,6 +510,7 @@
 				D0C9A90F1C7EDBA0005E7A36 /* MissonScene.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				D05B59BA1C7FF78400F40604 /* GameScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -513,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05B59BB1C7FF78400F40604 /* GameScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,

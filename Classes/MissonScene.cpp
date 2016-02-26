@@ -9,11 +9,13 @@
 #include "MissonScene.hpp"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "GameScene.hpp"
 
 USING_NS_CC;
 using namespace ui;
-
 using namespace cocostudio::timeline;
+
+#define kMissonNum 9
 
 Scene* MissonScene::createScene()
 {
@@ -98,6 +100,50 @@ bool MissonScene::init()
         
     Button *backBtn=(Button*)rootNode->getChildByName("back_Btn");
     backBtn->addTouchEventListener(CC_CALLBACK_2(MissonScene::backHome,this));
+    
+    Button *helpBtn=(Button*)rootNode->getChildByName("help_Btn");
+    helpBtn->addTouchEventListener(CC_CALLBACK_2(MissonScene::helpAction,this));
+
+    
+    //init misson   cache 析构的时候记得释放
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("Resource/stages_theme1.plist", "Resource/stages_theme1.png");
+    for (int i=0; i<kMissonNum; i++) {
+        char missonName[20];
+        sprintf(missonName, "ss_map0%d.png",i+1);
+        log("cur misson :%s",missonName);
+        SpriteFrame *spf=SpriteFrameCache::getInstance()->getSpriteFrameByName(missonName);
+        auto missonSprite=Sprite::createWithSpriteFrame(spf);
+        spriteVec.pushBack(missonSprite);
+    }
+    
+    missonSelect=PageView::create();
+    missonSelect->setContentSize(Size(506,334));
+    missonSelect->setAnchorPoint(Vec2(0.5, 0.5));
+    missonSelect->setPosition(Vec2(960/2,640/2));
+    missonSelect->setClippingEnabled(false);
+//    missonSelect->setTouchEnabled(true);
+//    missonSelect->setSwallowTouches(false);
+//    missonSelect->setIndicatorEnabled(true);
+
+    int i=0;
+    for (auto *missonSprite : spriteVec) {
+        i++;
+        Layout *wp=Layout::create();
+        missonSprite->setAnchorPoint(Vec2(0, 0));
+        wp->addChild(missonSprite);
+        Size size=Size(506, 334);
+        wp->setContentSize(size);
+        wp->setTag(1000+i);
+//        wp->addTouchEventListener(CC_CALLBACK_2(MissonScene::pageEvent, this));
+        missonSelect->addPage(wp);
+    }
+    
+    this->addChild(missonSelect);
+
+    
+//    missonSelect->addEventListenerPageView(this, pagevieweventselector(MissonScene::pageViewEvent));
+    missonSelect->addTouchEventListener(CC_CALLBACK_2(MissonScene::pageEvent, this));
+    
     return true;
 }
 
@@ -130,3 +176,69 @@ void MissonScene::backHome(Ref *pSender, cocos2d::ui::Widget::TouchEventType typ
             break;
     }
 }
+
+void MissonScene::helpAction(Ref *pSender, cocos2d::ui::Widget::TouchEventType type){
+    switch (type)
+    {
+        case cocos2d::ui::Widget::TouchEventType::BEGAN:
+        {
+            log("touch began");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::MOVED:
+        {
+            log("touch moved");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::ENDED:
+        {
+            log("help home");
+            missonSelect->scrollToPage(3);
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::CANCELED:
+        {
+            log("touch canceled");
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+void MissonScene::pageEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType type){
+    switch (type)
+    {
+        case cocos2d::ui::Widget::TouchEventType::BEGAN:
+        {
+            log("touch began");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::MOVED:
+        {
+            log("touch moved");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::ENDED:
+        {
+            
+            log("choose one: misson %zd",missonSelect->getCurrentPageIndex());
+            auto mainGame=GameScene::createScene();
+            Director::getInstance()->pushScene(mainGame);
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::CANCELED:
+        {
+            log("touch canceled");
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+void MissonScene::pageViewEvent(Ref *pSender, PageViewEventType type)
+{
+    log("scroll");
+}
+

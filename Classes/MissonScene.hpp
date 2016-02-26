@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "ui/CocosGUI.h"
+USING_NS_CC;
 
 class MissonScene : public cocos2d::Layer
 {
@@ -25,11 +26,13 @@ public:
     CREATE_FUNC(MissonScene);
     
 protected:
-    
-private:
+    Vector<Sprite*> spriteVec;
+    cocos2d::ui::PageView *missonSelect;
 private:
     void backHome(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
     void helpAction(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
+    void pageEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
+    void pageViewEvent(Ref *pSender, cocos2d::ui::PageViewEventType type);
 };
 
 #endif /* MissonScene_hpp */

@@ -25,5 +25,14 @@
         <LastRunType Value="Mac" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="MissonSelect.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="MissonSelect.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

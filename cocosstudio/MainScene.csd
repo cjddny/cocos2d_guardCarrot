@@ -2,7 +2,43 @@
   <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="511" Speed="1.0000">
+        <Timeline ActionTag="1400679872" Property="Position">
+          <PointFrame FrameIndex="40" X="148.8846" Y="418.9656">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="306" X="148.8846" Y="300.0000">
+            <EasingData Type="21" />
+          </PointFrame>
+        </Timeline>
+        <Timeline ActionTag="-733316106" Property="Position">
+          <PointFrame FrameIndex="0" X="281.6644" Y="516.2755">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="360" X="1000.0000" Y="507.5807">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="365" X="108.6676" Y="507.0968">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="511" X="283.6000" Y="507.5807">
+            <EasingData Type="0" />
+          </PointFrame>
+        </Timeline>
+        <Timeline ActionTag="-733316106" Property="Scale">
+          <ScaleFrame FrameIndex="511" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+        <Timeline ActionTag="-733316106" Property="RotationSkew">
+          <ScaleFrame FrameIndex="365" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="511" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+      </Animation>
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
@@ -39,7 +75,7 @@
             <FileData Type="PlistSubImage" Path="leaf-3.png" Plist="Resource/mainscene1.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Leaf_center" ActionTag="931533025" Tag="7" IconVisible="False" LeftMargin="383.2763" RightMargin="396.7238" TopMargin="60.1172" BottomMargin="419.8828" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Leaf_center" ActionTag="931533025" Tag="7" IconVisible="False" LeftMargin="383.2763" RightMargin="396.7237" TopMargin="60.1172" BottomMargin="419.8828" ctype="SpriteObjectData">
             <Size X="180.0000" Y="160.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="473.2763" Y="499.8828" />
@@ -50,7 +86,7 @@
             <FileData Type="PlistSubImage" Path="leaf-2.png" Plist="Resource/mainscene1.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="carrot_1" ActionTag="-1733306181" Tag="4" IconVisible="False" LeftMargin="383.6989" RightMargin="356.3010" TopMargin="156.0839" BottomMargin="283.9161" ctype="SpriteObjectData">
+          <AbstractNodeData Name="carrot_1" ActionTag="-1733306181" Tag="4" IconVisible="False" LeftMargin="383.6989" RightMargin="356.3011" TopMargin="156.0839" BottomMargin="283.9161" ctype="SpriteObjectData">
             <Size X="220.0000" Y="200.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="493.6989" Y="383.9161" />
@@ -87,13 +123,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Bird_Sprite" ActionTag="1400679872" Tag="9" IconVisible="False" LeftMargin="48.8846" RightMargin="711.1154" TopMargin="171.0344" BottomMargin="368.9656" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Bird_Sprite" ActionTag="1400679872" Tag="9" IconVisible="False" LeftMargin="48.8846" RightMargin="711.1154" TopMargin="231.4117" BottomMargin="308.5883" ctype="SpriteObjectData">
             <Size X="200.0000" Y="100.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="148.8846" Y="418.9656" />
+            <Position X="148.8846" Y="358.5883" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1551" Y="0.6546" />
+            <PrePosition X="0.1551" Y="0.5603" />
             <PreSize X="0.2083" Y="0.1563" />
             <FileData Type="PlistSubImage" Path="bird.png" Plist="Resource/mainscene1.plist" />
             <BlendFunc Src="1" Dst="771" />
@@ -113,13 +149,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cloud_small" ActionTag="-733316106" Tag="11" IconVisible="False" LeftMargin="211.6644" RightMargin="608.3356" TopMargin="63.7245" BottomMargin="456.2755" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cloud_small" ActionTag="-733316106" Tag="11" IconVisible="False" LeftMargin="560.8553" RightMargin="259.1447" TopMargin="67.9511" BottomMargin="452.0489" ctype="SpriteObjectData">
             <Size X="140.0000" Y="120.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="281.6644" Y="516.2755" />
+            <Position X="630.8553" Y="512.0489" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2934" Y="0.8067" />
+            <PrePosition X="0.6571" Y="0.8001" />
             <PreSize X="0.1458" Y="0.1875" />
             <FileData Type="PlistSubImage" Path="cloud1.png" Plist="Resource/mainscene1.plist" />
             <BlendFunc Src="1" Dst="771" />
