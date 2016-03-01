@@ -9,12 +9,13 @@
 #include "GameScene.hpp"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+
 USING_NS_CC;
 using namespace ui;
 
 using namespace cocostudio::timeline;
 
-Scene* GameScene::createScene()
+Scene* GameScene::createScene(int themeNum,int stageNum)
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
@@ -22,6 +23,7 @@ Scene* GameScene::createScene()
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
     
+    layer->loadMap(themeNum, stageNum);
     // add layer as a child to scene
     scene->addChild(layer);
     
@@ -92,5 +94,12 @@ bool GameScene::init()
         return false;
     }
     
+    mapLayer=GameMapLayer::create();
+    this->addChild(mapLayer);
+    
     return true;
+}
+
+void GameScene::loadMap(int themeNum,int stageNum){
+    mapLayer->loadMap(themeNum, stageNum);
 }

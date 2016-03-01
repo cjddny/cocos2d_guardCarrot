@@ -32,7 +32,8 @@ private:
     void backHome(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
     void helpAction(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
     void pageEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
-    void pageViewEvent(Ref *pSender, cocos2d::ui::PageViewEventType type);
+    void pageViewEvt(Ref *pSender, cocos2d::ui::PageView::EventType type);
+    void itemEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
 };
 
 #endif /* MissonScene_hpp */

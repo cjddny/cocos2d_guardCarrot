@@ -117,6 +117,7 @@ bool MissonScene::init()
     }
     
     missonSelect=PageView::create();
+    missonSelect->removeAllPages(); //清除所有页
     missonSelect->setContentSize(Size(506,334));
     missonSelect->setAnchorPoint(Vec2(0.5, 0.5));
     missonSelect->setPosition(Vec2(960/2,640/2));
@@ -126,7 +127,7 @@ bool MissonScene::init()
 //    missonSelect->setIndicatorEnabled(true);
 
     int i=0;
-    for (auto *missonSprite : spriteVec) {
+    for (auto missonSprite : spriteVec) {
         i++;
         Layout *wp=Layout::create();
         missonSprite->setAnchorPoint(Vec2(0, 0));
@@ -134,13 +135,13 @@ bool MissonScene::init()
         Size size=Size(506, 334);
         wp->setContentSize(size);
         wp->setTag(1000+i);
-//        wp->addTouchEventListener(CC_CALLBACK_2(MissonScene::pageEvent, this));
         missonSelect->addPage(wp);
+//        wp->setPropagateTouchEvents(true);
+//        wp->addTouchEventListener(CC_CALLBACK_2(MissonScene::itemEvent, this));
     }
     
     this->addChild(missonSelect);
-
-    
+    missonSelect->addEventListener(CC_CALLBACK_2(MissonScene::pageViewEvt, this));
 //    missonSelect->addEventListenerPageView(this, pagevieweventselector(MissonScene::pageViewEvent));
     missonSelect->addTouchEventListener(CC_CALLBACK_2(MissonScene::pageEvent, this));
     
@@ -223,7 +224,7 @@ void MissonScene::pageEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType ty
         {
             
             log("choose one: misson %zd",missonSelect->getCurrentPageIndex());
-            auto mainGame=GameScene::createScene();
+            auto mainGame=GameScene::createScene(1,missonSelect->getCurrentPageIndex());
             Director::getInstance()->pushScene(mainGame);
             break;
         }
@@ -237,8 +238,48 @@ void MissonScene::pageEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType ty
     }
 }
 
-void MissonScene::pageViewEvent(Ref *pSender, PageViewEventType type)
+
+void MissonScene::itemEvent(Ref *pSender, cocos2d::ui::Widget::TouchEventType type){
+    switch (type)
+    {
+        case cocos2d::ui::Widget::TouchEventType::BEGAN:
+        {
+            log("touch began");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::MOVED:
+        {
+            log("touch moved");
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::ENDED:
+        {
+            
+            log("choose one: misson %zd",missonSelect->getCurrentPageIndex());
+            auto mainGame=GameScene::createScene(1,missonSelect->getCurrentPageIndex());
+            Director::getInstance()->pushScene(mainGame);
+            break;
+        }
+        case cocos2d::ui::Widget::TouchEventType::CANCELED:
+        {
+            log("touch canceled");
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+
+void MissonScene::pageViewEvt(Ref *pSender, PageView::EventType type)
 {
     log("scroll");
+    switch (type)
+    {
+        case PageView::EventType::TURNING:
+        {
+        }
+    }
 }
+
 
